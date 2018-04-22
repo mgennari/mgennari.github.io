@@ -1,0 +1,54 @@
+﻿<section class="aboutMeSec">
+
+    <!--  Full HTML outline for the About section tab -->
+    <h1 class="title">About Me</h1>
+    <hr class="line"/>
+    <p class="outline">
+        <img src="Images/PiDay.jpeg" class="aboutMeImg" />
+        My name is Michael, and I am a passionate, self-driven student interested in Theoretical Physics as well as Pure and Applied Mathematics. 
+        Currently, I am pursuing a Bachelors of Science in Mathematical Physics at the University of Waterloo. Specific topics focused on through 
+        university coursework and self study include both Quantum Theory and General Relativity.
+        <br />
+        <br />
+        <h1 class="subtitle">Education - University of Waterloo</h1>
+        <hr class="line"/>
+        <h2 class="subtitle">Candidate for Bachelors of Science (BSc) in Mathematical Physics</h2>
+        <p class="outline">
+            The Mathematical Physics program at the University of Waterloo is a double degree of Honours Physics coupled with the Honours Applied Mathematics.
+            <br />
+            <br />
+            A brief summary of education and technical skills:
+    </p>
+    <div>
+        <ul class="aboutMeSummary" ng-controller="mySummary as sum">
+            <li class="aboutMeSummary" ng-repeat="line in sum.summary">
+                {{ line[0] }}
+            </li>
+        </ul>
+    </div>
+
+    <h1 class="subtitle">Travel</h1>
+    <hr class="line" />
+    <p class="outline">
+        Travelling has provided me with many novel experiences as I visited new locations around the world. Some of these include Italy,
+        England, San Marino, Dubai, and Syria. Each location has unique cultures, exposure to which has educated me in some way or another.
+        As a result of travelling, I have collected several photos, some of which are showcased below.
+    </p>
+
+    <!-- Here is where the photo slider for travel photos gets placed -->
+    <center>
+        <travel-slider></travel-slider>
+    </center>
+
+    <!-- There will be another photo slider for the astronomy section -->
+    <h1 class="subtitle">Astronomy</h1>
+    <hr class="line" />
+    <p class="outline">
+        Using my telescope is one of my favourite hobbies. I have always held a strong interest in cosmology, which has influenced my academic life heavily.
+        This interest is what has led me to pursue a degree in mathematical physics.
+        <br />
+        <br />
+        Once I take some better photos of Saturn, Jupiter, and the Moon, I will be placing them here.
+    </p>
+
+</section>

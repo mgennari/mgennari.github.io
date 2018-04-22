@@ -1,0 +1,25 @@
+﻿<section>
+
+    <!-- This photo slider controls the buttons navigation and which image and image outline is currently shown -->
+    <center>
+        <ul class="photoSlider">
+            <li class="btns">
+                <img src="PageElements/PrevButton.png" ng-click="photos.decPhoto()" class="arrow" />
+            </li>
+            <li class="btns">
+                <img ng-src="{{ photos.images[photos.currPhoto][0] }}" class="photoSlide" />
+            </li>
+            <li class="btns">
+                <img src="PageElements/NextButton.png" ng-click="photos.incPhoto()" class="arrow" />
+            </li>
+        </ul>
+    </center>
+
+    <!-- This part takes are of the image outline -->
+    <center>
+        <div class="photoOutline">
+            {{ photos.images[photos.currPhoto][1] }}
+        </div>
+    </center>
+
+</section>
