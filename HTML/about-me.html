@@ -4,34 +4,31 @@
     <h1 class="title">About Me</h1>
     <hr class="line"/>
     <p class="outline">
-        <img src="Images/PiDay.jpeg" class="aboutMeImg" />
-        My name is Michael, and I am a passionate, self-driven student interested in Theoretical Physics as well as Pure and Applied Mathematics. 
-        Currently, I am pursuing a Bachelors of Science in Mathematical Physics at the University of Waterloo. Specific topics focused on through 
-        university coursework and self study include both Quantum Theory and General Relativity.
+        <img src="images/pi-day.jpeg" class="aboutMeImg" />
+        My name is Michael Gennari, and I am pursuing a Bachelors of Science in mathematical physics at the University of Waterloo.
+        My interests currently lie in nuclear theory, pure and applied mathematics, and high performance computing.
         <br />
-        <br />
-        <h1 class="subtitle">Education - University of Waterloo</h1>
-        <hr class="line"/>
-        <h2 class="subtitle">Candidate for Bachelors of Science (BSc) in Mathematical Physics</h2>
-        <p class="outline">
+        <h1 class="title">Education</h1>
+        <hr class="line" />
+        <h2 class="subtitle">Candidate for Bachelors of Science (BSc) in Mathematical Physics, University of Waterloo</h2>
+        <div class="outline">
             The Mathematical Physics program at the University of Waterloo is a double degree of Honours Physics coupled with the Honours Applied Mathematics.
             <br />
             <br />
             A brief summary of education and technical skills:
-    </p>
-    <div>
-        <ul class="aboutMeSummary" ng-controller="mySummary as sum">
-            <li class="aboutMeSummary" ng-repeat="line in sum.summary">
-                {{ line[0] }}
-            </li>
-        </ul>
-    </div>
+            <ul class="aboutMeSummary" ng-controller="mySummary as sum">
+                <li class="aboutMeSummary" ng-repeat="line in sum.summary">
+                    {{ line[0] }}
+                </li>
+            </ul>
+        </div>
 
-    <h1 class="subtitle">Travel</h1>
+    <h1 class="title">Travel</h1>
     <hr class="line" />
     <p class="outline">
-        Travelling has provided me with many novel experiences as I visited new locations around the world. Some of these include Italy,
-        England, San Marino, Dubai, and Syria. Each location has unique cultures, exposure to which has educated me in some way or another.
+        Travelling has provided me with many novel experiences as I visit new locations around the world. I have travelled within Canada,
+        and some of the international locations I have visitied include Japan, Italy, San Marino, and Syria.
+        Each location has unique cultures, exposure to which has educated me in some way or another.
         As a result of travelling, I have collected several photos, some of which are showcased below.
     </p>
 
@@ -41,7 +38,7 @@
     </center>
 
     <!-- There will be another photo slider for the astronomy section -->
-    <h1 class="subtitle">Astronomy</h1>
+    <h1 class="title">Astronomy</h1>
     <hr class="line" />
     <p class="outline">
         Using my telescope is one of my favourite hobbies. I have always held a strong interest in cosmology, which has influenced my academic life heavily.

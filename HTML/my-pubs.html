@@ -4,8 +4,7 @@
     <h1 class="title"> {{ pubsCtrl.researchSection }} </h1>
     <hr class="line" />
     <div ng-repeat="paper in pubsCtrl.researchPapers">
-        <!--<a href="{{ paper[0] }}" target="_blank" class="researchList"><img src="Research/sadFace.png" class="aboutMeImg" /></a>-->
-        <p class="researchList">Unfortunately, this section is currently empty. I hope to begin adding to this section soon!</p>
+        <a href="{{ paper[0] }}" target="_blank" class="researchList"> {{ $index + 1 }}. {{ paper[1] }} </a>
     </div>
 
     <!-- This section displays all presentations and posters -->

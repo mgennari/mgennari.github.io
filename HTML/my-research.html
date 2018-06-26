@@ -1,20 +1,35 @@
 ﻿<section class="projectsSection" ng-controller="researchController as resCtrl">
-
     <h1 class="title">TRIUMF, Theory Group</h1>
     <hr class="line" />
     <!-- Here it lists my research at TRIUMF and brief summaries about it -->
-    <div ng-repeat="res in resCtrl.researchTRIUMF" class="resDivDiv">
-        <a href= '{{ res[0] }}' >
-            <img ng-src="{{ res[0] }}" class="resPhoto" />
+    <h2 class="subtitle">Microscopic optical potentials derived from nonlocal densities</h2>
+    <br />
+    <div ng-repeat="opdens in resCtrl.nlocdens" class="resDivDiv">
+        <a href='{{ opdens[0] }}'>
+            <img ng-src="{{ opdens[0] }}" class="resPhoto" />
         </a>
-        <div class="resDiv"></a>
+        <div class="resDiv">
+            </a>
             <p class="resDescrip">
-                {{ res[1] }}
+                {{ opdens[1] }}
             </p>
         </div>
-        <hr class="line" />
     </div>
+    <h2 class="subtitle">Kinetic density from nonlocal densities</h2>
     <br />
     <br />
-
+    <div ng-repeat="kd in resCtrl.kdens" class="resDivDiv">
+        <a href='{{ kd[0] }}'>
+            <img ng-src="{{ kd[0] }}" class="resPhoto" />
+        </a>
+        <div class="resDiv">
+            </a>
+            <p class="resDescrip">
+                {{ kd[1] }}
+            </p>
+        </div>
+    </div>
+    <hr class="line" />
+    <br />
+    <br />
 </section>
