@@ -5,11 +5,10 @@
     <h2 class="subtitle">Microscopic optical potentials derived from nonlocal densities</h2>
     <br />
     <div ng-repeat="opdens in resCtrl.nlocdens" class="resDivDiv">
-        <a href='{{ opdens[0] }}'>
+        <a target="_blank" href='{{ opdens[0] }}'>
             <img ng-src="{{ opdens[0] }}" class="resPhoto" />
         </a>
         <div class="resDiv">
-            </a>
             <p class="resDescrip">
                 {{ opdens[1] }}
             </p>
@@ -23,7 +22,6 @@
             <img ng-src="{{ kd[0] }}" class="resPhoto" />
         </a>
         <div class="resDiv">
-            </a>
             <p class="resDescrip">
                 {{ kd[1] }}
             </p>
