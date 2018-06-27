@@ -34,6 +34,7 @@
     myWebpage.controller("mySummary", function () {
         this.summary = [
             ["Advanced background in nuclear theory from research in TRIUMF's Theory Group"],
+            ["Branching knowledge in machine learning and applications to the nuclear many-body problem"],
             ["Proficient in several programming languages such as FORTRAN, Python, R"],
             ["Experienced in communicating advanced content in mathematics and physics to varying audiences"]
         ]
@@ -82,7 +83,7 @@
     myWebpage.controller("publicationsController", function () {
         this.researchSection = "Published Papers";
         this.researchPapers = [
-            ["research/papers/opdens.pdf", "M. Gennari, M. Vorabbi, A. Calci, and P. Navrátil, Phys. Rev. C 97, 034619 (2018)"]
+            ["https://arxiv.org/abs/1712.02879", "M. Gennari, M. Vorabbi, A. Calci, and P. Navrátil, Phys. Rev. C 97, 034619 (2018)"]
         ];
         this.prespostSection = "Presentations and Posters";
         this.prespostList = [
