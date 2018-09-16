@@ -101,7 +101,7 @@
     myWebpage.controller("resumeController", function () {
         this.myResumes = [
             ["resumes/cv-mgennari-Sep2018.pdf", "Michael Gennari's Curriculum Vitae (Updated September 2018)"],
-            ["resumes/General Resume April 2018.pdf", "Michael Gennari's Resume (Updated June 2018)"],
+            ["resumes/res-mgennari-Sep2018.pdf", "Michael Gennari's Resume (Updated September 2018)"],
         ];
     });
 
