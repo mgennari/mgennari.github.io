@@ -34,7 +34,8 @@
 }
 
 .allTabs {
-    margin-left: 7vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navBtns {
@@ -227,12 +228,11 @@
         font-size: 1.5vw;
         line-height: 150%;
         float: left;
-        margin: 0.5vw 1vw 0.5vw 3vw;
+        margin: 0.5vw 1vw 0.5vw 0vw;
         color: white;
         clear: left;
         list-style: none;
         text-decoration: none;
-
     }
 
     .resume {
@@ -240,7 +240,7 @@
         font-size: 1.55vw;
         line-height: 115%;
         float: left;
-        margin: 1vw;
+        margin: 0.5vw;
         color: white;
         clear: left;
         list-style: none;
@@ -255,14 +255,11 @@
         font-size: 1.55vw;
         line-height: 115%;
         float: left;
-        margin: 1vw;
+        margin: 0.5vw 1vw 0.5vw 0vw;
         color: white;
         clear: left;
         list-style: none;
         text-decoration: none;
-        background-color: #424242;
-        padding: 1vw;
-        border-radius: 0.5vw;
     }
 
     .contactTable {

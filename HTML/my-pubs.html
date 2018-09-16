@@ -1,24 +1,32 @@
 ﻿<section class="researchSection" ng-controller="publicationsController as pubsCtrl">
-
     <!-- This covers all my research papers -->
     <h1 class="title"> {{ pubsCtrl.researchSection }} </h1>
     <hr class="line" />
-    <div ng-repeat="paper in pubsCtrl.researchPapers">
-        <a href="{{ paper[0] }}" target="_blank" class="researchList"> {{ $index + 1 }}. {{ paper[1] }} </a>
+    <div>
+        <ul>
+            <li ng-repeat="paper in pubsCtrl.researchPapers" class="researchList">
+                <a href="{{ paper[0] }}" target="_blank" class="resume">{{ $index + 1 }}. {{ paper[1] }}</a>
+            </li>
+        </ul>
     </div>
-
     <!-- This section displays all presentations and posters -->
     <h1 class="title"> {{ pubsCtrl.prespostSection }} </h1>
     <hr class="line" />
-    <div ng-repeat="pres in pubsCtrl.prespostList">
-        <a href="{{ pres[0] }}" target="_blank" class="researchList"> {{ $index + 1 }}. {{ pres[1] }} </a>
+    <div>
+        <ul>
+            <li ng-repeat="pres in pubsCtrl.prespostList" class="researchList">
+                <a href="{{ pres[0] }}" target="_blank" class="resume">{{ $index + 1 }}. {{ pres[1] }}</a>
+            </li>
+        </ul>
     </div>
-
     <!-- This section displays all of my work reports which are research related -->
     <h1 class="title"> {{ pubsCtrl.reportSection }} </h1>
     <hr class="line" />
-    <div ng-repeat="report in pubsCtrl.workReports">
-        <a href="{{ report[0] }}" target="_blank" class="researchList"> {{ $index + 1 }}. {{ report[1] }} </a>
+    <div>
+        <ul>
+            <li ng-repeat="report in pubsCtrl.workReports" class="researchList">
+                <a href="{{ report[0] }}" target="_blank" class="resume">{{ $index + 1 }}. {{ report[1] }}</a>
+            </li>
+        </ul>
     </div>
-
 </section>

@@ -1,29 +1,23 @@
 ﻿<section class="resumeSection" ng-controller="resumeController as resumeCtrl">
-
-    <h1 class="title">Resumes and References</h1>
+    <h1 class="title">Resumes and references</h1>
     <hr class="line" />
-
     <!-- This loops through all my resume versions, references, and their descriptions -->
     <div>
         <ul>
             <li ng-repeat="res in resumeCtrl.myResumes" class="resumeList">
-                <a href="{{ res[0] }}" target="_blank" class="resume">
-                    <p class="resumeList"> {{ $index + 1 }}. {{ res[1] }} </p>
-                </a>
+                <a href="{{ res[0] }}" target="_blank" class="resume">{{ $index + 1 }}. {{ res[1] }}</a>
             </li>
         </ul>
     </div>
 </section>
 
 <section class="contactSection" ng-controller="contactMeController as contactCtrl">
-
     <h1 class="title">Contact</h1>
     <hr class="line" />
     <p class="outline">
         If you would like to contact me, please feel free to reach me through any of the following email addresses. Additionally, you can contact me through the
         University of Waterloo.
     </p>
-
     <!-- Shows all of my contact information and links where appropriate -->
     <table class="contactTable">
         <tr ng-repeat="email in contactCtrl.emails">
@@ -31,5 +25,4 @@
             <td><a href="mailto:{{ email[1] }}" target="_blank" class="contactEmail"> {{ email[1] }} </a></td>
         </tr>
     </table>
-
 </section>

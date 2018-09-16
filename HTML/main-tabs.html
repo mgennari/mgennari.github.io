@@ -1,34 +1,30 @@
-﻿<section class="navSec">
-
-    <!-- All navigation buttons and top tabs -->
-    <ul class="allTabs">
-        <li class="btns">
-            <img src="PrevButton.png" class="arrow" ng-click="tabs.tabLeft()">
-        </li>
-        <li ng-class="{ active:tabs.tabSet(1) }" class="btns">
-            <button class="navBtns" ng-click="tabs.setTab(1)">ABOUT</button>
-        </li>
-        <li ng-class="{ active:tabs.tabSet(2) }" class="btns">
-            <button class="navBtns" ng-click="tabs.setTab(2)">RESEARCH</button>
-        </li>
-        <li ng-class="{ active:tabs.tabSet(3) }" class="btns">
-            <button class="navBtns" ng-click="tabs.setTab(3)">PUBLICATIONS</button>
-        </li>
-        <li ng-class="{ active:tabs.tabSet(4) }" class="btns">
-            <button class="navBtns" ng-click="tabs.setTab(4)">RESUMES/CONTACT</button>
-        </li>
-        <li class="btns">
-            <img src="NextButton.png" class="arrow" ng-click="tabs.tabRight()">
-        </li>
-    </ul>
-
+﻿<center>
+<section class="navSec">
+        <!-- All navigation buttons and top tabs -->
+        <ul class="allTabs">
+            <li class="btns">
+                <img src="PrevButton.png" class="arrow" ng-click="tabs.tabLeft()">
+            </li>
+            <li ng-class="{ active:tabs.tabSet(1) }" class="btns">
+                <button class="navBtns" ng-click="tabs.setTab(1)">ABOUT</button>
+            </li>
+            <li ng-class="{ active:tabs.tabSet(2) }" class="btns">
+                <button class="navBtns" ng-click="tabs.setTab(2)">RESEARCH</button>
+            </li>
+            <li ng-class="{ active:tabs.tabSet(3) }" class="btns">
+                <button class="navBtns" ng-click="tabs.setTab(3)">RESUMES & CONTACT</button>
+            </li>
+            <li class="btns">
+                <img src="NextButton.png" class="arrow" ng-click="tabs.tabRight()">
+            </li>
+        </ul>
+</section>
+</center>
+<section>
     <!-- First Tab About Me -->
     <div ng-show="tabs.tabSet(1)" ng-include="'html/about-me.html'"></div>
-    <!-- Second Tab Research -->
-    <div ng-show="tabs.tabSet(2)" ng-include="'html/my-research.html'"></div>
-    <!-- Third Tab Publications -->
-    <div ng-show="tabs.tabSet(3)" ng-include="'html/my-pubs.html'"></div>
-    <!-- Fourth Tab Resume and Contact -->
-    <div ng-show="tabs.tabSet(4)" ng-include="'html/my-resume.html'"></div>
-
+    <!-- Second Tab Publications -->
+    <div ng-show="tabs.tabSet(2)" ng-include="'html/my-pubs.html'"></div>
+    <!-- Third Tab Resume and Contact -->
+    <div ng-show="tabs.tabSet(3)" ng-include="'html/my-resume.html'"></div>
 </section>
